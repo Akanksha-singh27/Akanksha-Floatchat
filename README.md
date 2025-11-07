@@ -25,4 +25,30 @@
 
 ## Project Structure
 
+- index.html # Home page
+- chat.html # Chat interface page
+- dashboard.html # Dashboard page
+- features.html # Features description page
+- aboutpage.html # About page
+- signin.html # Sign-in page
+- dashboard_style.css # CSS for dashboard
+- style.css # General styling
+- dashboard_app.js # JavaScript for dashboard functionality
+- bg.png # Background image
+- ocean.png # Ocean image
+## How to Use
+
+**1. Clone the repository then Navigate to the project folder and open the main page:**  
+```bash
+git clone https://github.com/Akanksha-singh27/Akanksha-Floatchat.git
+# Navigate to the project folder
+cd Akanksha-Floatchat
+
+# Open index.html in your browser
+# You can double-click index.html or right-click → Open with your preferred browser
+
+
+
+
+
 
