@@ -1,54 +1,107 @@
-# Akanksha-FloatChat
+# FloatChat — Conversational Ocean Data Explorer (Prototype)
 
-**FloatChat** is an AI-powered conversational interface designed for discovering and visualizing ARGO ocean data. It allows users to interact with oceanographic data through a friendly chat interface, making data exploration intuitive and interactive.
+FloatChat is a browser-based frontend prototype that demonstrates how ARGO oceanographic data could be explored through a conversational interface.
+
+This project was originally built for hackathon pitching — showing how scientific marine data (temperature / salinity / depth readings from ARGO floats) can be democratized and made accessible through chat-based queries + visual dashboards.
 
 ---
 
-## Features
+## Why FloatChat?
 
-- **Interactive Chat Interface:** Users can query ocean data conversationally.  
-- **Dashboard Visualization:** View key metrics and summaries in a clean, responsive dashboard.  
-- **Multiple Pages:** Includes Home, Features, Dashboard, Sign-in, and About pages.  
-- **Responsive Design:** Works across devices using HTML, CSS, and JavaScript.  
-- **Static and Dynamic Content:** Combines static pages with interactive JavaScript functionality.
+Oceanographic research data is massive, complex, and locked behind specialized tools.  
+FloatChat imagines a future where:
+
+- you don’t need a scientific background to explore ocean data  
+- you can just *talk* to the ocean dataset like ChatGPT  
+- the system automatically visualizes insights for you  
+
+This prototype shows the UI, UX and visualization concepts for that experience.
+
+---
+
+## 🌟 Key Features (Current Prototype)
+
+| Feature | Description |
+|---------|-------------|
+| Conversational UI | Chat interface designed for marine data Q&A |
+| Dashboard Concepts | mock graphs for float trajectories, depth-time analysis |
+| Responsive UI | mobile + tablet + desktop friendly |
+| Modern UX | ocean gradient design system & smooth UI transitions |
+| Hackathon-ready narrative | clearly shows the problem → vision → UI → value |
+
+> Note: This version is **frontend-only**.  
+> ARGO data & responses are simulated.
+
+---
+
+## 🧠 Proposed AI Workflow (for future version)
+
+- ingest ARGO NetCDF / CSV float datasets  
+- store float embeddings in vector DB  
+- semantic RAG based retrieval from dataset  
+- LLM produces narrative insights + chart instructions  
+- frontend renders the visualization automatically
+
+
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript  
-- **Data Visualization:** Custom charts with JavaScript  
-- **Assets:** Images (`ocean.png`, `bg.png`)  
-- **Backend:** None (fully client-side demo)
+| Layer | Technology |
+|-------|-----------|
+| Frontend | HTML, CSS, JavaScript |
+| Charts | Chart.js |
+| Data Status | mock sample JSON data |
+| ML / API | not implemented yet (planned RAG backend) |
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
-- index.html # Home page
-- chat.html # Chat interface page
-- dashboard.html # Dashboard page
-- features.html # Features description page
-- aboutpage.html # About page
-- signin.html # Sign-in page
-- dashboard_style.css # CSS for dashboard
-- style.css # General styling
-- dashboard_app.js # JavaScript for dashboard functionality
-- bg.png # Background image
-- ocean.png # Ocean image
-## How to Use
-
-**1. Clone the repository then Navigate to the project folder and open the main page:**  
 ```bash
-git clone https://github.com/Akanksha-singh27/Akanksha-Floatchat.git
-# Navigate to the project folder
-cd Akanksha-Floatchat
+/index.html            -> landing page
+/features.html         -> feature showcase
+/aboutpage.html        -> ARGO intro + product story
+/chat.html             -> main chat interface screen
+/dashboard.html        -> visual analytics section
+/dashboard_app.js      -> chart logic + mock ARGO data
+/dashboard_style.css   -> dashboard styling
+/style.css             -> global styling
+```
 
-# Open index.html in your browser
-# You can double-click index.html or right-click → Open with your preferred browser
+---
 
+## ▶️ Run Locally
 
+```bash
+git clone https://github.com/Akanksha-singh27/Akanksha-Floatchat
+```
 
+Then open:
 
+```bash
+index.html
+```
+
+in your browser.
+
+---
+
+## Future Roadmap
+
+- integrate real ARGO APIs
+- build backend for RAG retriever
+- conversational querying with LLM
+- persistent user sessions + saved chats
+- export visual reports for researchers
+
+---
+
+## 👩‍💻 Author
+
+**Akanksha Singh**
+
+GitHub → [@Akanksha-singh27](https://github.com/Akanksha-singh27)
 
 
